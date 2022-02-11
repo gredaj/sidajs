@@ -5,14 +5,28 @@
     <title>Exempel 1 navigation bar</title> 
 
     <meta charset = "utf-8" /> 
-
     
-    <link href="css/slider.css" rel="stylesheet" type="text.css" />
-    
-    
+    <link href="css/slider.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head> 
 
 <body> 
+ <div class="topnav">
+      <a class="active" href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
+      <div class="search-container">
+        <form action="/action_page.php">
+          <input type="text" placeholder="Search.." name="search">
+          <button type="submit"><i class="fa fa-search"> </i></button>
+        </form>
+      </div>
+    </div>
+    
+    <div style="padding-left:16px">
+    </div>
+
+<!--wrapper börjar--> 
 
     <div class="wrapper"> 
 
@@ -22,32 +36,15 @@
 
     </header> 
 
-    <header class="mainmenu"> 
+   
 
-        <ul> 
-
-            <li><a href="home.html">Hem</a></li> 
-
-            <li><a href="news.html">Nyheter</a></li> 
-
-            <li><a href="contacts.html">kontakt</a></li> 
-
-            <li><a href="about.html">Om</a></li> 
-
-        </ul> 
-
-    </header> 
-
-    <div class="wrapper_2col"> 
-
-    <div class="leftcol"> 
-        
-         <div class="div-content">
-        <img class="mySlides" src="img/image1.jpg" style="width: 100%;">
-        <img class="mySlides" src="img/image2.jpg" style="width: 100%;">
-        <img class="mySlides" src="img/image3.jpg" style="width: 100%;">
-        <img class="mySlides" src="img/image4.jpg" style="width: 100%;">
-        <img class="mySlides" src="img/image5.jpg" style="width: 100%;">
+      
+<div class="div-content">
+        <img class="mySlides" src="img/image1.jpg" alt="imgage" style="width: 100%;">
+        <img class="mySlides" src="img/image2.jpg" alt="imgage" style="width: 100%;">
+        <img class="mySlides" src="img/image3.jpg" alt="imgage" style="width: 100%;">
+        <img class="mySlides" src="img/image4.jpg" alt="imgage" style="width: 100%;">
+        <img class="mySlides" src="img/image5.jpg" alt="imgage" style="width: 100%;">
         <button class="slider-button display-left"
         onclick="changeImage(-1)">&#129076;</button>
         <button class="slider-button display-right"
@@ -55,6 +52,11 @@
     </div>
     <script src="js/domjs.js"></script>
 
+    </header> 
+
+    <div class="wrapper_2col"> 
+
+    <div class="leftcol"> 
 
       <p> 
 
@@ -115,7 +117,6 @@
       </p> 
 
       <p>
-
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed a augue id 
 
         leo scelerisque hendrerit non non dui. Integer condimentum quam sed tellus 
